@@ -1,7 +1,5 @@
 package p02.lecture;
 
-import org.omg.CORBA.INV_FLAG;
-
 public class A05TypeInt {
 	public static void main(String[] args) {
 		// int : 4byte(32bit) 
