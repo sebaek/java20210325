@@ -60,7 +60,7 @@ public class Solution01 {
 		double var1 = (double) intValue;
 		byte var2 = (byte) intValue;
 		int var3 = (int) doubleValue;
-//		char var4 = (char) strValue;
+		char var4 = (char) strValue;
 		
 		
 		
