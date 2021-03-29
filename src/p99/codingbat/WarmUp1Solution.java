@@ -1,6 +1,20 @@
 package p99.codingbat;
 
 public class WarmUp1Solution {
+	public boolean in1020(int a, int b) {
+		// return (a >= 10 && a <= 20) || (b >= 10 && b <= 20);
+
+		if (a >= 10 && a <= 20) {
+			return true;
+		}
+
+		if (b >= 10 && b <= 20) {
+			return true;
+		}
+
+		return false;
+	}
+
 	public boolean icyHot(int temp1, int temp2) {
 
 		if (temp1 < 0 && temp2 > 100) {
