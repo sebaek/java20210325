@@ -1,6 +1,14 @@
 package p99.codingbat;
 
 public class WarmUp1Solution {
+	public int diff21(int n) {
+		if (n < 22) {
+			return 21 - n;
+		} else {
+			return (n - 21) * 2;
+		}
+	}
+
 	public int sumDouble(int a, int b) {
 		return (a == b) ? (a + b) * 2 : (a + b);
 	}
