@@ -1,6 +1,19 @@
 package p99.codingbat;
 
 public class WarmUp1Solution {
+	public boolean makes10(int a, int b) {
+		if (a == 10 || b == 10) {
+			return true;
+		}
+
+		if (a + b == 10) {
+			return true;
+		}
+
+		return false;
+
+	}
+
 	public boolean parrotTrouble(boolean talking, int hour) {
 
 		if (talking) {
