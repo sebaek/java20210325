@@ -1,6 +1,10 @@
 package p99.codingbat;
 
 public class WarmUp1Solution {
+	public int sumDouble(int a, int b) {
+		return (a == b) ? (a + b) * 2 : (a + b);
+	}
+
 	public boolean in1020(int a, int b) {
 		// return (a >= 10 && a <= 20) || (b >= 10 && b <= 20);
 
