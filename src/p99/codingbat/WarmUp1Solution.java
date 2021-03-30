@@ -1,6 +1,22 @@
 package p99.codingbat;
 
 public class WarmUp1Solution {
+	public boolean nearHundred(int n) {
+		int diff = n - 100;
+
+		if (diff >= -10 && diff <= 10) {
+			return true;
+		}
+
+		diff = n - 200;
+
+		if (diff >= -10 && diff <= 10) {
+			return true;
+		}
+
+		return false;
+	}
+
 	public boolean makes10(int a, int b) {
 		if (a == 10 || b == 10) {
 			return true;
