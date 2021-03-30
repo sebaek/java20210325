@@ -2,7 +2,7 @@ package p04.textbook;
 
 public class IfElseExample {
 	public static void main(String[] args) {
-		int score = 85;
+		int score = 100;
 		
 		if (score >= 90) {
 			System.out.println("점수가 90보다 큽니다.");
@@ -11,5 +11,7 @@ public class IfElseExample {
 			System.out.println("점수가 90보다 작습니다.");
 			System.out.println("등급은 B 입니다.");
 		}
+		
+		
 	}
 }
