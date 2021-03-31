@@ -17,11 +17,13 @@ public class A12ForPrimeNumber {
 		for (int i = 2; i < number; i++) {
 			if ((number % i) == 0) {
 				System.out.println("소수가 아닙니다.");
+				scanner.close();
 				return;
 			}
 		}
 		
 		System.out.println("소수 입니다.");
+		scanner.close();
 	}
 }
 
