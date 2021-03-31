@@ -16,7 +16,12 @@ public class A13ForGCD {
 		System.out.println("입력 받은 두 수는 " + num1 +"과 " + num2);
 		
 		// 최대공약수를 출력하는 코드 작성.....
-		
+		for (int d = num1; d >= 1; d--) {
+			if ((num1 % d) == 0 && (num2 % d) == 0) {
+				System.out.println("최대공약수는: " + d);
+				return;
+			}
+		}
 		
 		
 		scanner.close();
