@@ -1,6 +1,14 @@
 package p99.codingbat;
 
 public class WarmUp1Solution {
+	public boolean posNeg(int a, int b, boolean negative) {
+		if (negative) {
+			return (a < 0) && (b < 0);
+		} else {
+			return (a * b) < 0;
+		}
+	}
+
 	public boolean nearHundred(int n) {
 		int diff = n - 100;
 
