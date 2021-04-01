@@ -13,7 +13,7 @@ public class A17WhileSample {
 			System.out.println("컴퓨터의 수를 맞춰보세요>");
 			int userNumber = scanner.nextInt();
 			
-			System.out.println("맞춰습니다");
+			System.out.println("맞췄습니다");
 			break;
 			
 			System.out.println("더 큰 수를 입력해보세요.");
