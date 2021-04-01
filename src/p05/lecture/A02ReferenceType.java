@@ -1,6 +1,7 @@
 package p05.lecture;
 
 public class A02ReferenceType {
+	// 그림 : 01.참조타입.png
 	public static void main(String[] args) {
 		int i;
 		i = 3;
