@@ -9,5 +9,7 @@ public class A03ReferenceType {
 		String s = new String("java");
 		String t = new String("java");
 		
+		System.out.println(i == j);
+		System.out.println(s == t);
 	}
 }
