@@ -1,5 +1,7 @@
 package p05.lecture;
 
+import java.util.Arrays;
+
 public class A10Array {
 	// 그림 : 06.배열.png
 	public static void main(String[] args) {
@@ -18,6 +20,8 @@ public class A10Array {
 		System.out.println(arr[1]);
 		System.out.println(arr[2]);
 		
+		// 한 번에 출력
+		System.out.println(Arrays.toString(arr));
 	}
 }
 
