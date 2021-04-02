@@ -8,12 +8,21 @@ public class A18ArraySample {
 		double avg1 = avg(arr1);
 		double avg2 = avg(arr2);
 		
-		System.out.println(avg1);
-		System.out.println(avg2);
+		System.out.println(avg1); // 5
+		System.out.println(avg2); // 85.666666666667
 	}
 	
 	public static double avg(int[] arr) {
 		// 작성할 곳..
+		
+		int sum = 0;
+		for (int i = 0; i < arr.length; i++) {
+			sum += arr[i];
+		}
+		
+		double avg = (double) sum / arr.length;
+		
+		return avg;
 	}
 }
 
