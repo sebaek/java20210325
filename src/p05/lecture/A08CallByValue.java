@@ -9,7 +9,9 @@ public class A08CallByValue {
 		
 		String s = "java";
 		String u = new String("java");
+		System.out.println(System.identityHashCode(s));
 		method2(s);
+		System.out.println(System.identityHashCode(u));
 		method2(u);
 	}
 	
@@ -19,6 +21,7 @@ public class A08CallByValue {
 	
 	public static void method2(String s) {
 		System.out.println(s);
+		System.out.println(System.identityHashCode(s));
 	}
 }
 
