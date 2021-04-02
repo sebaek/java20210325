@@ -34,6 +34,9 @@ public class A11ArrayField {
 		for (int i = 0; i < 3; i++) {
 			System.out.println(arr1[i]);
 		}
+		
+		System.out.println("arr2 출력 (for)");
+		//
 	}
 }
 
