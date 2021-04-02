@@ -12,7 +12,9 @@ public class A11ArrayField {
 		arr1[1] = 11;
 		arr1[2] = 12;
 		*/
-		// for
+		for (int i = 0; i < arr1.length; i++) {
+			arr1[i] = 10 + i;
+		}
 		
 		/*
 		arr2[0] = 100;
@@ -21,7 +23,9 @@ public class A11ArrayField {
 		arr2[3] = 400;
 		arr2[4] = 500;
 		*/
-		// for
+		for (int i = 0; i < arr2.length + 1; i++) {
+			arr2[i] = 100 * (i + 1);
+		}
 		
 		System.out.println("arr1 출력");
 		System.out.println(arr1[0]);
