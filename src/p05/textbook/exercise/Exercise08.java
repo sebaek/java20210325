@@ -27,6 +27,13 @@ public class Exercise08 {
 			}
 		}
 		
+		/*
+		int itemNum = 0;
+		for (int i = 0; i < array.length; i++) {
+			itemNum += array[i].length;
+		}
+		*/
+		
 		avg = (double) sum / cnt;
 		
 		System.out.println("sum : " + sum);
