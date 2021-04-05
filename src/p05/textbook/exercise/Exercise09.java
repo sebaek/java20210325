@@ -50,6 +50,8 @@ public class Exercise09 {
 					if (score > max) {
 						max = score;
 					}
+//					max = (max > score) ? max : score;
+//					max = Math.max(max, score);
 				}
 				
 				avg = sum / scores.length;
