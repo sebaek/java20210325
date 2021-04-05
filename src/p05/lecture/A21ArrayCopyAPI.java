@@ -19,7 +19,7 @@ public class A21ArrayCopyAPI {
 		System.out.println(Arrays.toString(arr2));
 
 		// 복사
-		System.arraycopy(arr1, 0, arr2, 0, 5);
+		System.arraycopy(arr1, 0, arr2, 5, 5);
 
 		// 복사 후
 		System.out.println(Arrays.toString(arr1));
