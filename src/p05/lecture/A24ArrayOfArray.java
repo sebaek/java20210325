@@ -1,5 +1,7 @@
 package p05.lecture;
 
+import java.util.Arrays;
+
 public class A24ArrayOfArray {
 	public static void main(String[] args) {
 		int[] arr1 = new int[3];
@@ -26,6 +28,12 @@ public class A24ArrayOfArray {
 				System.out.print(arr2[i][j] + ",");
 			}
 			System.out.println();
+		}
+		
+		// Arrays.toString()
+		System.out.println("--- Arrays.toString() ---");
+		for (int[] arr : arr2) {
+			System.out.println(Arrays.toString(arr));
 		}
 		
 	}
