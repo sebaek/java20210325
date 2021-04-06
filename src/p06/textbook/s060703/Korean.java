@@ -6,7 +6,7 @@ public class Korean {
 	String ssn;
 	
 	public Korean(String name, String ssn) {
-		name = n;
-		ssn = s;
+		this.name = name;
+		this.ssn = ssn;
 	}
 }
