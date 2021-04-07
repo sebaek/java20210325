@@ -5,7 +5,9 @@ public class MyClass2 {
 	
 	void method1(int b) {
 		int c = 99;
+		int a = 10000;
 		System.out.println("a:" + a);
+		System.out.println("this.a:" + this.a);
 		System.out.println("b:" + b);
 		System.out.println("c:" + c);
 	}
