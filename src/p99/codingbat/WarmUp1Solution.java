@@ -1,6 +1,18 @@
 package p99.codingbat;
 
 public class WarmUp1Solution {
+	public String missingChar(String str, int n) {
+		String res = "";
+
+		for (int i = 0; i < str.length(); i++) {
+			if (i != n) {
+				res += str.charAt(i);
+			}
+		}
+
+		return res;
+	}
+
 	public String notString(String str) {
 		if (str.startsWith("not")) {
 			return str;
