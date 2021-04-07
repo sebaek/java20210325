@@ -40,6 +40,20 @@ public class MyClass4 {
 			return "hello";
 		}
 	}
+	
+	String method7() {
+		
+		System.out.println("method7 호출...");
+		
+		boolean c = 3 < 5;
+		
+		if (c) {
+			return "world";
+		}
+		
+		System.out.println("method7 호출2...");
+		return "world";
+	}
 }
 
 
