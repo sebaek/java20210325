@@ -26,6 +26,31 @@ public class Computer {
 		this.cpu = "intel";
 		this.ssd = 128;
 	}
+	
+	Computer(int memory, String model) {
+		
+	}
+	
+	/*
+	Computer(String cpu, int ssd) {
+		
+	}
+	/*
+	
+	Computer(String model) {
+		this.model = model;
+		this.memory = 4;
+		this.cpu = "intel";
+		this.ssd = 128;
+	}
+	
+	/*
+	Computer(String cpu) {
+		this.model = "hp";
+		this.memory = 4;
+		this.ssd = 128;
+	}
+	*/
 }
 
 
