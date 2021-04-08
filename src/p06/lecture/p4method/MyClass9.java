@@ -5,9 +5,13 @@ public class MyClass9 {
 		System.out.println("method()~~~");
 	}
 	
-	void method(int i) {
-		System.out.println("method(int)");
-	}
+//	int method() {
+//		System.out.println("method()");
+//	}
+	
+//	void method(int i) {
+//		System.out.println("method(int)");
+//	}
 	
 	void method(double i) {
 		System.out.println("method(double)");

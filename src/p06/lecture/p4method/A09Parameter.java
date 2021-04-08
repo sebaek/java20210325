@@ -10,8 +10,14 @@ public class A09Parameter {
 		
 		o1.method();
 		o1.method(0);
+		o1.method(3.14);
 		o1.method(1, 2);
 		o1.method(1, "hello");
 		o1.method("hello", 2);
 	}
 }
+
+
+
+
+
