@@ -1,6 +1,18 @@
 package p99.codingbat;
 
 public class WarmUp1Solution {
+
+	public String front3(String str) {
+
+		String front = str;
+
+		if (str.length() > 3) {
+			front = str.substring(0, 3);
+		}
+
+		return front + front + front;
+	}
+
 	public String frontBack(String str) {
 		if (str.length() > 1) {
 			char front = str.charAt(0);
