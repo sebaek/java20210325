@@ -12,3 +12,7 @@ public class Car {
 	p06.textbook.s061204.hankook.Tire tire3 = new p06.textbook.s061204.hankook.Tire();
 	p06.textbook.s061204.kumho.Tire tire4 = new p06.textbook.s061204.kumho.Tire();
 }
+
+
+
+
