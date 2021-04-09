@@ -10,7 +10,6 @@ public class Car {
 	public void setSpeed(int speed) {
 		if (speed < 0) {
 			this.speed = 0;
-			return ;
 		} else {
 			this.speed = speed;
 		}
@@ -25,3 +24,6 @@ public class Car {
 		this.speed = 0;
 	}
 }
+
+
+
