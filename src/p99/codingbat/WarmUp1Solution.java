@@ -2,6 +2,12 @@ package p99.codingbat;
 
 public class WarmUp1Solution {
 
+	public String backAround(String str) {
+		char last = str.charAt(str.length() - 1);
+
+		return last + str + last;
+	}
+
 	public String front3(String str) {
 
 		String front = str;
