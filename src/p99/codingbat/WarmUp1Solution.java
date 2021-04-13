@@ -1,6 +1,20 @@
 package p99.codingbat;
 
 public class WarmUp1Solution {
+	public String front22(String str) {
+		if (str.length() > 2) {
+			String front = str.substring(0, 2);
+
+			return front + str + front;
+		}
+
+		return str + str + str;
+
+	}
+
+	public boolean or35(int n) {
+		return (n % 3 == 0) || (n % 5 == 0);
+	}
 
 	public String front3(String str) {
 
