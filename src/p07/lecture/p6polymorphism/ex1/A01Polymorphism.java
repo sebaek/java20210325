@@ -22,6 +22,10 @@ public class A01Polymorphism {
 		System.out.println(System.identityHashCode(k2));
 		System.out.println(System.identityHashCode(tiger1));
 		
+		KindaCat k3 = new Cat();
+		KindaCat k4 = new Tiger();
+		
+		
 //		cat1 = k1; // x
 //		tiger1 = k2; // x
 //		
