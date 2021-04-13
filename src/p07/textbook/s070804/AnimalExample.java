@@ -26,3 +26,9 @@ public class AnimalExample {
 		animal.sound();
 	}
 }
+
+
+
+
+
+
