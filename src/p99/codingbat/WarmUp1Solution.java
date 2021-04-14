@@ -1,6 +1,16 @@
 package p99.codingbat;
 
 public class WarmUp1Solution {
+	public boolean startHi(String str) {
+		if (str.length() >= 2) {
+			char first = str.charAt(0);
+			char second = str.charAt(1);
+			return first == 'h' && second == 'i';
+		}
+
+		return false;
+	}
+
 	public String front22(String str) {
 		if (str.length() > 2) {
 			String front = str.substring(0, 2);
