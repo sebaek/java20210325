@@ -13,10 +13,12 @@ public class RemoteControlExample {
 		rc = new Television();
 		rc.turnOn();
 		rc.turnOff();
+		rc.setMute(false);
 		
 		rc = new Audio();
 		rc.turnOn();
 		rc.turnOff();
+		rc.setMute(true);
 		
 		rc = new SmartTelevision();
 		rc.turnOn();
