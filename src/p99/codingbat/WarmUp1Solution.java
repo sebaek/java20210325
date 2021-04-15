@@ -1,6 +1,24 @@
 package p99.codingbat;
 
 public class WarmUp1Solution {
+	public String startOz(String str) {
+		String res = "";
+
+		for (int i = 0; i < str.length(); i++) {
+			if (i == 0 && str.charAt(i) == 'o') {
+				res += 'o';
+				continue;
+			}
+
+			if (i == 1 && str.charAt(i) == 'z') {
+				res += 'z';
+				break;
+			}
+		}
+
+		return res;
+	}
+
 	public boolean mixStart(String str) {
 		if (str.length() < 3) {
 			return false;
