@@ -1,6 +1,19 @@
 package p99.codingbat;
 
 public class WarmUp1Solution {
+	public String delDel(String str) {
+		if (str.length() < 4) {
+			return str;
+		}
+
+		String d = str.substring(1, 4);
+		if (d.equals("del")) {
+			return str.substring(0, 1) + str.substring(4);
+		} else {
+			return str;
+		}
+	}
+
 	public boolean loneTeen(int a, int b) {
 		boolean aTeen = (13 <= a) && (a <= 19);
 		boolean bTeen = (13 <= b) && (b <= 19);
