@@ -19,5 +19,25 @@ public class RemoteControlExample {
 			}
 			
 		};
+		
+		System.out.println(RemoteControl.MAX_VOLUME);
+		System.out.println(RemoteControl.MIN_VOLUME);
+		rc.setMute(false);
+		
+		rc.turnOn();
+		rc.turnOff();
+		rc.setVolume(3);
+		
+		RemoteControl.changeBattery();
+		
 	}
 }
+
+
+
+
+
+
+
+
+
