@@ -1,6 +1,14 @@
 package p99.codingbat;
 
 public class WarmUp1Solution {
+	public boolean mixStart(String str) {
+		if (str.length() < 3) {
+			return false;
+		}
+
+		return str.substring(1, 3).equals("ix");
+	}
+
 	public String delDel(String str) {
 		if (str.length() < 4) {
 			return str;
