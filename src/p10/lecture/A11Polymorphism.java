@@ -7,9 +7,9 @@ public class A11Polymorphism {
 		try {
 			System.out.println("try 실행");
 			
-			int[] arr1 = {};
+			int[] arr1 = {2};
 			System.out.println(arr1[0]); // ArrayIndexOutOfBoundsException
-			Integer.parseInt("abc"); // NumberFormatException
+			Integer.parseInt("555"); // NumberFormatException
 			String str = "java";
 			Object o = str;
 			StringBuffer sb = (StringBuffer) o; // ClassCastException
