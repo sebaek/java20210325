@@ -1,6 +1,16 @@
 package p99.codingbat;
 
 public class WarmUp1Solution {
+	public boolean in3050(int a, int b) {
+		boolean a3040 = (30 <= a) && (a <= 40);
+		boolean b3040 = (30 <= b) && (b <= 40);
+
+		boolean a4050 = (40 <= a) && (a <= 50);
+		boolean b4050 = (40 <= b) && (b <= 50);
+
+		return (a3040 && b3040) || (a4050 && b4050);
+	}
+
 	public int close10(int a, int b) {
 		int a10 = Math.abs(10 - a);
 		int b10 = Math.abs(10 - b);
