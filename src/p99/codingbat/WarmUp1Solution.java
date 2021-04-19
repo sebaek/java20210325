@@ -1,6 +1,13 @@
 package p99.codingbat;
 
 public class WarmUp1Solution {
+	public int intMax(int a, int b, int c) {
+		int ab = Math.max(a, b);
+		int max = Math.max(ab, c);
+
+		return max;
+	}
+
 	public String startOz(String str) {
 		String res = "";
 
