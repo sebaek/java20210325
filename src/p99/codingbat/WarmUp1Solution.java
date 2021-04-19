@@ -1,6 +1,19 @@
 package p99.codingbat;
 
 public class WarmUp1Solution {
+	public int close10(int a, int b) {
+		int a10 = Math.abs(10 - a);
+		int b10 = Math.abs(10 - b);
+
+		if (a10 < b10) {
+			return a;
+		} else if (b10 < a10) {
+			return b;
+		} else {
+			return 0;
+		}
+	}
+
 	public int intMax(int a, int b, int c) {
 		int ab = Math.max(a, b);
 		int max = Math.max(ab, c);
