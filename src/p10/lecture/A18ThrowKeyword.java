@@ -16,7 +16,7 @@ public class A18ThrowKeyword {
 		int i = 0;
 		
 		if (i == 0) {
-			throw new RuntimeException();
+			throw new RuntimeException("i가 0입니다.");
 		}
 	}
 	
