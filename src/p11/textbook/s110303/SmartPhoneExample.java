@@ -6,7 +6,6 @@ public class SmartPhoneExample {
 		
 		String strObj = myPhone.toString();
 		System.out.println(strObj);
-		
 		System.out.println(myPhone);
 	}
 }
