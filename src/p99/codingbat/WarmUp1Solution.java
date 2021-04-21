@@ -1,6 +1,10 @@
 package p99.codingbat;
 
 public class WarmUp1Solution {
+	public boolean lastDigit(int a, int b) {
+		return (a % 10) == (b % 10);
+	}
+
 	public boolean stringE(String str) {
 		int cnt = 0;
 		for (int i = 0; i < str.length(); i++) {
