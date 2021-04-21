@@ -1,6 +1,18 @@
 package p99.codingbat;
 
 public class WarmUp1Solution {
+	public int max1020(int a, int b) {
+		if (a < 10 || 20 < a) {
+			a = 0;
+		}
+
+		if (b < 10 || 20 < b) {
+			b = 0;
+		}
+
+		return Math.max(a, b);
+	}
+
 	public boolean in3050(int a, int b) {
 		boolean a3040 = (30 <= a) && (a <= 40);
 		boolean b3040 = (30 <= b) && (b <= 40);
