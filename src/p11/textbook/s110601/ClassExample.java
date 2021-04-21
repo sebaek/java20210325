@@ -20,5 +20,14 @@ public class ClassExample {
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
+		
+
+		Class clazz3 = p06.textbook.s061204.mycompany.Car.class;
 	}
 }
+
+
+
+
+
+
