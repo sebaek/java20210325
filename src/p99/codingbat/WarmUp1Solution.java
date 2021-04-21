@@ -1,6 +1,16 @@
 package p99.codingbat;
 
 public class WarmUp1Solution {
+	public String everyNth(String str, int n) {
+		String res = "";
+
+		for (int i = 0; i < str.length(); i += n) {
+			res += str.charAt(i);
+		}
+
+		return res;
+	}
+
 	public String endUp(String str) {
 		if (str.length() < 3) {
 			return str.toUpperCase();
