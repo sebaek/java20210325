@@ -1,6 +1,18 @@
 package p99.codingbat;
 
 public class WarmUp1Solution {
+	public boolean stringE(String str) {
+		int cnt = 0;
+		for (int i = 0; i < str.length(); i++) {
+			char c = str.charAt(i);
+			if (c == 'e') {
+				cnt++;
+			}
+		}
+
+		return 1 <= cnt && cnt <= 3;
+	}
+
 	public int max1020(int a, int b) {
 		if (a < 10 || 20 < a) {
 			a = 0;
