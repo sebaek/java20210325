@@ -187,6 +187,11 @@ public class A01RegularExpression {
 		System.out.println(Pattern.matches(regex1, str4));
 		System.out.println(Pattern.matches(regex1, str5));
 		System.out.println(Pattern.matches(regex1, str6));
+		
+		regex1 = "[가-힣]+";
+		str1 = "김";
+		System.out.println(Pattern.matches(regex1, str1));
+		
 	}
 }
 
