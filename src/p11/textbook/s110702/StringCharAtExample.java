@@ -13,7 +13,7 @@ public class StringCharAtExample {
 			break;
 		case '2':
 		case '4':
-			System.out.println("남자입니다.");
+			System.out.println("여자입니다.");
 			break;
 
 		}
