@@ -46,6 +46,30 @@ public class A01RegularExpression {
 		regex1 = "010-\\d{4}-\\d{4}";
 		str1 = "010-9876-3333";
 		System.out.println(Pattern.matches(regex1, str1));
+		
+		regex1 = "\\d{3,5}";
+		str1 = "232456";
+		System.out.println(Pattern.matches(regex1, str1));
+		
+		regex1 = "\\d+"; // \d{1,}
+		str1 = "10";
+		System.out.println(Pattern.matches(regex1, str1));
+		
+		regex1 = "\\d*"; // \d{0,}
+		str1 = "0";
+		System.out.println(Pattern.matches(regex1, str1));
+		
+		regex1 = "\\d?"; // \d{0,1}
+		str1 = "";
+		System.out.println(Pattern.matches(regex1, str1));
+		
+		regex1 = "010-?\\d{4}-?\\d{4}";
+		str1 = "010-9876-3333";
+		String str2 = "01098763333";
+		String str3 = "010-98763333";
+		System.out.println(Pattern.matches(regex1, str1));
+		System.out.println(Pattern.matches(regex1, str2));
+		System.out.println(Pattern.matches(regex1, str3));
 	}
 }
 
