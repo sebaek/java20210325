@@ -117,6 +117,76 @@ public class A01RegularExpression {
 		System.out.println(Pattern.matches(regex1, str1));
 		System.out.println(Pattern.matches(regex1, str2));
 		System.out.println(Pattern.matches(regex1, str3));
+		
+		regex1 = ".";
+		str1 = "$";
+		str2 = ".";
+		str3 = "A";
+		str4 = "9";
+		str5 = "_";
+		System.out.println(Pattern.matches(regex1, str1));
+		System.out.println(Pattern.matches(regex1, str2));
+		System.out.println(Pattern.matches(regex1, str3));
+		System.out.println(Pattern.matches(regex1, str4));
+		System.out.println(Pattern.matches(regex1, str5));
+		
+		regex1 = "\\.";
+		str1 = "$";
+		str2 = ".";
+		str3 = "A";
+		str4 = "9";
+		str5 = "_";
+		System.out.println(Pattern.matches(regex1, str1));
+		System.out.println(Pattern.matches(regex1, str2));
+		System.out.println(Pattern.matches(regex1, str3));
+		System.out.println(Pattern.matches(regex1, str4));
+		System.out.println(Pattern.matches(regex1, str5));
+		
+		regex1 = "[abc]";
+		str1 = "a";
+		str2 = "b";
+		str3 = "c";
+		str4 = "d";
+		System.out.println(Pattern.matches(regex1, str1));
+		System.out.println(Pattern.matches(regex1, str2));
+		System.out.println(Pattern.matches(regex1, str3));
+		System.out.println(Pattern.matches(regex1, str4));
+		
+		regex1 = "[^abc]";
+		str1 = "a";
+		str2 = "b";
+		str3 = "c";
+		str4 = "d";
+		System.out.println(Pattern.matches(regex1, str1));
+		System.out.println(Pattern.matches(regex1, str2));
+		System.out.println(Pattern.matches(regex1, str3));
+		System.out.println(Pattern.matches(regex1, str4));
+		
+		regex1 = "[a-z]";
+		str1 = "a";
+		str2 = "b";
+		str3 = "c";
+		str4 = "d";
+		str5 = "A";
+		System.out.println(Pattern.matches(regex1, str1));
+		System.out.println(Pattern.matches(regex1, str2));
+		System.out.println(Pattern.matches(regex1, str3));
+		System.out.println(Pattern.matches(regex1, str4));
+		System.out.println(Pattern.matches(regex1, str5));
+		
+		regex1 = "[a-zA-Z]";
+		str1 = "a";
+		str2 = "b";
+		str3 = "c";
+		str4 = "d";
+		str5 = "A";
+		String str6 = "7";
+		System.out.println(Pattern.matches(regex1, str1));
+		System.out.println(Pattern.matches(regex1, str2));
+		System.out.println(Pattern.matches(regex1, str3));
+		System.out.println(Pattern.matches(regex1, str4));
+		System.out.println(Pattern.matches(regex1, str5));
+		System.out.println(Pattern.matches(regex1, str6));
 	}
 }
 
