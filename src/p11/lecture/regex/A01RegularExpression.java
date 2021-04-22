@@ -70,6 +70,53 @@ public class A01RegularExpression {
 		System.out.println(Pattern.matches(regex1, str1));
 		System.out.println(Pattern.matches(regex1, str2));
 		System.out.println(Pattern.matches(regex1, str3));
+		
+		regex1 = "\\w"; 
+		str1 = "s";
+		str2 = "T";
+		str3 = "8";
+		String str4 = "_";
+		String str5 = " ";
+		System.out.println(Pattern.matches(regex1, str1));
+		System.out.println(Pattern.matches(regex1, str2));
+		System.out.println(Pattern.matches(regex1, str3));
+		System.out.println(Pattern.matches(regex1, str4));
+		System.out.println(Pattern.matches(regex1, str5));
+		
+		regex1 = "\\w\\d+";
+		str1 = "e3498769734";
+		str2 = "2938792752";
+		str3 = "_3987259";
+		System.out.println(Pattern.matches(regex1, str1));
+		System.out.println(Pattern.matches(regex1, str2));
+		System.out.println(Pattern.matches(regex1, str3));
+		
+		regex1 = "(java)";
+		str1 = "java";
+		System.out.println(Pattern.matches(regex1, str1));
+		
+		regex1 = "(java)+";
+		str1 = "javajavajava";
+		str2 = "javajavajavaj";
+		System.out.println(Pattern.matches(regex1, str1));
+		System.out.println(Pattern.matches(regex1, str2));
+		
+		
+		regex1 = "(java|python)";
+		str1 = "java";
+		str2 = "python";
+		str3 = "spring";
+		System.out.println(Pattern.matches(regex1, str1));
+		System.out.println(Pattern.matches(regex1, str2));
+		System.out.println(Pattern.matches(regex1, str3));
+		
+		regex1 = "(java|python)+";
+		str1 = "java";
+		str2 = "python";
+		str3 = "pythonjavajavapython";
+		System.out.println(Pattern.matches(regex1, str1));
+		System.out.println(Pattern.matches(regex1, str2));
+		System.out.println(Pattern.matches(regex1, str3));
 	}
 }
 
