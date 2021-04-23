@@ -1,6 +1,18 @@
 package p99.codingbat;
 
 public class WarmUp2Solution {
+	boolean doubleX(String str) {
+
+		for (int i = 0; i < str.length() - 1; i++) {
+			char c = str.charAt(i);
+			if (c == 'x') {
+				return str.charAt(i + 1) == 'x';
+			}
+		}
+
+		return false;
+	}
+
 	int countXX(String str) {
 		int cnt = 0;
 		for (int i = 0; i < str.length() - 1; i++) {
