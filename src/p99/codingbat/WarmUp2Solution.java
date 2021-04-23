@@ -1,6 +1,18 @@
 package p99.codingbat;
 
 public class WarmUp2Solution {
+	int countXX(String str) {
+		int cnt = 0;
+		for (int i = 0; i < str.length() - 1; i++) {
+			String sub = str.substring(i, i + 2);
+			if (sub.equals("xx")) {
+				cnt++;
+			}
+		}
+
+		return cnt;
+	}
+
 	public String frontTimes(String str, int n) {
 		String res = "";
 
