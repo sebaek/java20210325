@@ -14,12 +14,19 @@ public class A12Concurrency {
 			}
 		});
 		t.start();
+		
+		for (int i = 0 ; i < 100_0000; i++) {
+			shareValue++;
+		}
+		
 		try {
 			t.join();
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		
+		
 		System.out.println(shareValue);
 		
 	}
