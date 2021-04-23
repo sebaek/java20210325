@@ -46,7 +46,7 @@ class Box {
 			e.printStackTrace();
 		}
 		
-		System.out.println(i);
+		System.out.println(this.i);
 	}
 }
 
