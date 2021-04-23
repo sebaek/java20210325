@@ -3,7 +3,7 @@ package p12.lecture;
 public class A14SynchronizedMethod {
 	public static void main(String[] args) {
 		Thread14 t1 = new Thread14();
-		Thread15 t2 = new Thread15();
+		Thread14 t2 = new Thread14();
 		
 		Box box = new Box();
 		t1.box = box;
@@ -19,36 +19,26 @@ class Thread14 extends Thread {
 	
 	@Override
 	public void run() {
-		box.update(100);
+		box.execute();
 	}
 }
-
-class Thread15 extends Thread {
-	public Box box;
-	
-	@Override
-	public void run() {
-		box.update(50);
-	}
-}
-
 
 class Box {
-	public int i;
-	
-	public void update(int i) {
-		this.i = i;
-		
+	public synchronized void execute() {
+		System.out.println("method start");
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		System.out.println(this.i);
+		System.out.println("method end");
 	}
 }
+
+
+
+
+
 
 
 
