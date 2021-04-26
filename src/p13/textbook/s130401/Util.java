@@ -1,5 +1,11 @@
 package p13.textbook.s130401;
 
-public class Util {
+import p13.textbook.s130202.Box;
 
+public class Util {
+	public static <T> Box<T> boxing(T t) {
+		Box<T> box = new Box<T>();
+		box.set(t);
+		return box;
+	}
 }
