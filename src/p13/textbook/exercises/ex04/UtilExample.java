@@ -9,5 +9,6 @@ public class UtilExample {
 		Pair<Integer, String> pair2 = new Pair<>(99, "java");
 		String name = Util.getValue(pair2, 99);
 		System.out.println(name);
+		
 	}
 }
