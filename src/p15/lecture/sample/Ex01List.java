@@ -16,6 +16,7 @@ public class Ex01List {
 		System.out.println(max);
 		
 		int indexOfMax = indexOfMax(list);
+		System.out.println(indexOfMax);
 		System.out.println(list.get(indexOfMax));
 	}
 	
