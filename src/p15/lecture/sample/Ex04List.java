@@ -16,6 +16,20 @@ public class Ex04List {
 		Student max = maxScore(list);
 		System.out.println(max.getName() + ":" + max.getScore());
 	}
+
+	private static Student maxScore(List<Student> list) {
+		Student s = null;
+		int max = Integer.MIN_VALUE;
+		
+		for (Student stu : list) {
+			if (stu.getScore() > max) {
+				s = stu;
+				max = stu.getScore();
+			}
+		}
+		
+		return s;
+	}
 }
 
 class Student {
