@@ -20,6 +20,16 @@ public class Ex04List {
 		System.out.println(sum);
 	}
 
+	private static int sumScore(List<Student> list) {
+		int sum = 0;
+
+		for (Student s : list) {
+			sum += s.getScore();
+		}
+		
+		return sum;
+	}
+
 	private static Student maxScore(List<Student> list) {
 		Student s = null;
 		int max = Integer.MIN_VALUE;
