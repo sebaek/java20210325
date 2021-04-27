@@ -11,7 +11,20 @@ public class Ex01List {
 		
 		int sum = sum(list);
 		System.out.println(sum);
+		
+		
 	}
+	
+	public static int sum(List<Integer> list) {
+		int sum = 0;
+		
+		for (int n : list) {
+			sum += n;
+		}
+		
+		return sum;
+	}
+	
 	
 }
 
