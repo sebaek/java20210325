@@ -12,7 +12,8 @@ public class Ex01List {
 		int sum = sum(list);
 		System.out.println(sum);
 		
-		
+		int max = max(list);
+		System.out.println(max);
 	}
 	
 	public static int sum(List<Integer> list) {
