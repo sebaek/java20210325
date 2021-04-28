@@ -24,6 +24,11 @@ public class Ex05List {
 		
 		max = max2(list);
 		System.out.println(max);
+		
+		List<Integer> flatList = flat(list);
+		System.out.println(flatList.size()); // 16
+		System.out.println(flatList.get(15)); // 123
+		
 	}
 
 	private static int max2(List<List<Integer>> list) {
