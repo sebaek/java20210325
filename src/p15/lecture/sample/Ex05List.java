@@ -22,6 +22,40 @@ public class Ex05List {
 		int max = max(list);
 		System.out.println(max);
 		
+		max = max2(list);
+		System.out.println(max);
+	}
+
+	private static int max2(List<List<Integer>> list) {
+		int max = Integer.MIN_VALUE;
+		
+		for (List<Integer> sub : list) {
+			for (int item : sub) {
+				if (item > max) {
+					max = item;
+				}
+			}
+		}
+		
+		return max;
+	}
+
+	private static int max(List<List<Integer>> list) {
+		int max = Integer.MIN_VALUE;
+
+		for (int i = 0; i < list.size(); i++) {
+			List<Integer> subList = list.get(i);
+			
+			for (int j = 0; j < subList.size(); j++) {
+				int item = subList.get(j);
+				
+				if (item > max) {
+					max = item;
+				}
+			}
+		}
+		
+		return max;
 	}
 }
 
