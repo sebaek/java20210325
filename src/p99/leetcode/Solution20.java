@@ -1,5 +1,7 @@
 package p99.leetcode;
 
+import java.util.Stack;
+
 public class Solution20 {
 	public boolean isValid(String s) {
 		Stack<Character> stack = new Stack<>();
