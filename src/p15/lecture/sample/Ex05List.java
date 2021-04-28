@@ -31,6 +31,18 @@ public class Ex05List {
 		
 	}
 
+	private static List<Integer> flat(List<List<Integer>> list) {
+		List<Integer> flat = new ArrayList<>();
+		
+		for (List<Integer> sub : list) {
+			for (Integer item : sub) {
+				flat.add(item);
+			}
+		}
+		
+		return flat;
+	}
+
 	private static int max2(List<List<Integer>> list) {
 		int max = Integer.MIN_VALUE;
 		
