@@ -29,6 +29,25 @@ public class Ex05List {
 		System.out.println(flatList.size()); // 16
 		System.out.println(flatList.get(15)); // 123
 		
+		flatList = flat2(list);
+		System.out.println(flatList.size()); // 16
+		System.out.println(flatList.get(15)); // 123
+	}
+
+	private static List<Integer> flat2(List<List<Integer>> list) {
+		List<Integer> flat = new ArrayList<>();
+		
+		for (int i = 0; i < list.size(); i++) {
+			List<Integer> sub = list.get(i);
+			
+			for (int j = 0; j < sub.size(); j++) {
+//				Integer item = sub.get(j);
+//				flat.add(item);
+				flat.add(sub.get(j));
+			}
+		}
+		
+		return flat;
 	}
 
 	private static List<Integer> flat(List<List<Integer>> list) {
