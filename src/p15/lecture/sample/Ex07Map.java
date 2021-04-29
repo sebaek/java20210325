@@ -28,8 +28,9 @@ public class Ex07Map {
 		
 		for (int num : arr1) {
 			if (map.containsKey(num)) {
-				int cnt = map.get(num);
-				map.put(num, cnt+1);
+//				int cnt = map.get(num);
+//				map.put(num, cnt+1);
+				map.put(num, map.get(num) + 1);
 			} else {
 				map.put(num, 1);
 			}
