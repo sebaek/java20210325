@@ -32,8 +32,12 @@ public class Ex06Set {
 //			result += iter.next();
 //		}
 		
-		for (int n : set) {
-			result += n;
+//		for (int n : set) {
+//			result += n;
+//		}
+		
+		for (Iterator<Integer> iter = set.iterator(); iter.hasNext();) {
+			result += iter.next();
 		}
 		
 		return result;
