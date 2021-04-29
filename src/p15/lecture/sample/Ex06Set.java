@@ -25,10 +25,15 @@ public class Ex06Set {
 		
 		int result = 0;
 		
-		Iterator<Integer> iter = set.iterator();
 		
-		while (iter.hasNext()) {
-			result += iter.next();
+//		Iterator<Integer> iter = set.iterator();
+//		
+//		while (iter.hasNext()) {
+//			result += iter.next();
+//		}
+		
+		for (int n : set) {
+			result += n;
 		}
 		
 		return result;
