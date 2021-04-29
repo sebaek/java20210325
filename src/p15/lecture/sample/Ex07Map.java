@@ -11,6 +11,15 @@ public class Ex07Map {
 		for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
 			System.out.println(entry.getKey() + ":" + entry.getValue());
 		}
+		
+		/*
+			3:3
+			5:2
+			1:4
+			2:2
+			4:1
+
+		 */
 	}
 }
 
