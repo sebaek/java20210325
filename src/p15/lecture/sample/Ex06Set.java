@@ -8,8 +8,8 @@ public class Ex06Set {
 		int sum1 = sum(arr1);
 		int sum2 = sum(arr2);
 		
-		System.out.println(sum1);
-		System.out.println(sum2);
+		System.out.println(sum1); // 15
+		System.out.println(sum2); // 10
 	}
 	
 	public static int sum(int[] nums) {
