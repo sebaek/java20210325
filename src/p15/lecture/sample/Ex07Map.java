@@ -1,5 +1,6 @@
 package p15.lecture.sample;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class Ex07Map {
@@ -20,6 +21,21 @@ public class Ex07Map {
 			4:1
 
 		 */
+	}
+
+	private static Map<Integer, Integer> count(int[] arr1) {
+		Map<Integer, Integer> map = new HashMap<>();
+		
+		for (int num : arr1) {
+			if (map.containsKey(num)) {
+				int cnt = map.get(num);
+				map.put(num, cnt+1);
+			} else {
+				map.put(num, 1);
+			}
+		}
+		
+		return map;
 	}
 }
 
