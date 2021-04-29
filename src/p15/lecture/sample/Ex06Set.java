@@ -1,5 +1,9 @@
 package p15.lecture.sample;
 
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
 public class Ex06Set {
 	public static void main(String[] args) {
 		int[] arr1 = {1, 2, 3, 4, 5, 2, 3};
@@ -13,6 +17,35 @@ public class Ex06Set {
 	}
 	
 	public static int sum(int[] nums) {
+		Set<Integer> set = new HashSet<>();
 		
+		for (int n : nums) {
+			set.add(n);
+		}
+		
+		int result = 0;
+		
+		Iterator<Integer> iter = set.iterator();
+		
+		while (iter.hasNext()) {
+			result += iter.next();
+		}
+		
+		return result;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
