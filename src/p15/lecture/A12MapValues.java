@@ -1,4 +1,4 @@
-package p15.lecture.sample;
+package p15.lecture;
 
 import java.util.Collection;
 import java.util.HashMap;
