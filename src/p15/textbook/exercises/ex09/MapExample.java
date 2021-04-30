@@ -2,6 +2,7 @@ package p15.textbook.exercises.ex09;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class MapExample {
 	public static void main(String[] args) {
@@ -15,6 +16,7 @@ public class MapExample {
 		int maxScore = 0;
 		int totalScore = 0;
 		
+		/*
 		for (Map.Entry<String, Integer> entry : map.entrySet()) {
 			String key = entry.getKey();
 			int value = entry.getValue();
@@ -22,6 +24,20 @@ public class MapExample {
 			if (value > maxScore) {
 				name = key;
 				maxScore = value;
+			}
+			
+			totalScore += value;
+		}
+		*/
+		
+		Set<String> keys = map.keySet();
+		
+		for (String key : keys) {
+			int value = map.get(key);
+			
+			if (value > maxScore) {
+				maxScore = value;
+				name = key;
 			}
 			
 			totalScore += value;
