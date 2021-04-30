@@ -13,8 +13,17 @@ public class A13Properties {
 		Scanner scanner = new Scanner(new File(path));
 		
 		while (scanner.hasNextLine()) {
-			System.out.println(scanner.nextLine());
+//			System.out.println(scanner.nextLine());
+			String line = scanner.nextLine();
+			int e = line.indexOf("=");
+			String key = line.substring(0, e);
+			String value = line.substring(e + 1);
+			
+			map1.put(key, value);
 		}
+		
+		System.out.println(map1.get("id"));
+		System.out.println(map1.get("password"));
 		
 		scanner.close();
 	}
