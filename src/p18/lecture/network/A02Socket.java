@@ -18,7 +18,7 @@ public class A02Socket {
 			socket = serverSocket.accept();
 			System.out.println("[연결 완료]");
 			InetSocketAddress address = (InetSocketAddress) socket.getRemoteSocketAddress();
-			System.out.println(address.getHostName());
+			System.out.println(address.getAddress());
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
