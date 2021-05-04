@@ -26,7 +26,7 @@ public class ServerExample {
 			fileName = fileName.trim();
 
 			System.out.println("[파일 받기 시작]" + fileName);
-			FileOutputStream fos = new FileOutputStream("/Temp" + fileName);
+			FileOutputStream fos = new FileOutputStream("/Temp/" + fileName);
 			int len = 0;
 			while ((len = is.read(bytes)) != -1) {
 				fos.write(bytes, 0, len);
