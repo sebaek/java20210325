@@ -27,6 +27,7 @@ public class A02Socket {
 			os = socket.getOutputStream();
 			osw = new OutputStreamWriter(os);
 			osw.write("hello client");
+			osw.flush();
 			
 		} catch (Exception e) {
 			e.printStackTrace();
