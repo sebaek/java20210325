@@ -1,6 +1,18 @@
 package p99.codingbat;
 
 public class WarmUp2Solution {
+	public int arrayCount9(int[] nums) {
+		int cnt = 0;
+
+		for (int num : nums) {
+			if (num == 9) {
+				cnt++;
+			}
+		}
+
+		return cnt;
+	}
+
 	public int last2(String str) {
 		int len = str.length();
 
