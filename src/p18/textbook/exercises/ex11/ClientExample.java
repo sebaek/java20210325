@@ -9,7 +9,7 @@ public class ClientExample {
 	public static void main(String[] args) throws Exception {
 		String path = "pic/s130601.png";
 		
-		Socket socket = new Socket("172.30.1.43", 5001);
+		Socket socket = new Socket("172.30.1.11", 5001);
 		OutputStream os = socket.getOutputStream();
 		
 		File file = new File(path);

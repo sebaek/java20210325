@@ -1,6 +1,46 @@
 package p99.codingbat;
 
 public class WarmUp2Solution {
+	public int last2(String str) {
+		int len = str.length();
+
+		if (len < 2) {
+			return 0;
+		}
+
+		String last = str.substring(len - 2);
+
+		int count = 0;
+
+		for (int i = 0; i < len - 2; i++) {
+			String mid = str.substring(i, i + 2);
+			if (mid.equals(last)) {
+				count++;
+			}
+		}
+
+		return count;
+	}
+
+	public String stringSplosion(String str) {
+
+		String res = "";
+		for (int i = 0; i < str.length(); i++) {
+			res += str.substring(0, i + 1);
+		}
+
+		return res;
+	}
+
+	public String stringBits(String str) {
+		String res = "";
+
+		for (int i = 0; i < str.length(); i += 2) {
+			res += str.charAt(i);
+		}
+		return res;
+	}
+
 	boolean doubleX(String str) {
 
 		for (int i = 0; i < str.length() - 1; i++) {
