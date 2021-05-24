@@ -1,6 +1,24 @@
 package p99.codingbat;
 
 public class WarmUp2Solution {
+	public int stringMatch(String a, String b) {
+		int aLen = a.length();
+		int bLen = b.length();
+		int loop = Math.min(aLen, bLen);
+		int cnt = 0;
+
+		for (int i = 0; i < loop - 1; i++) {
+			String aSub = a.substring(i, i + 2);
+			String bSub = b.substring(i, i + 2);
+
+			if (aSub.equals(bSub)) {
+				cnt++;
+			}
+		}
+
+		return cnt;
+	}
+
 	public boolean array123(int[] nums) {
 
 		for (int i = 1; i < nums.length - 1; i++) {
