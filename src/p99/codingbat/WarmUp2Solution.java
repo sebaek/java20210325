@@ -1,6 +1,32 @@
 package p99.codingbat;
 
 public class WarmUp2Solution {
+	public boolean array123(int[] nums) {
+
+		for (int i = 1; i < nums.length - 1; i++) {
+			if (nums[i] == 2) {
+				if (nums[i - 1] == 1 && nums[i + 1] == 3) {
+					return true;
+				}
+			}
+		}
+
+		return false;
+	}
+
+	public boolean arrayFront9(int[] nums) {
+		int len = nums.length;
+		int loop = Math.min(len, 4);
+
+		for (int i = 0; i < loop; i++) {
+			if (nums[i] == 9) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
 	public int arrayCount9(int[] nums) {
 		int cnt = 0;
 
